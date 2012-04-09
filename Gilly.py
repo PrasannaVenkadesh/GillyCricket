@@ -9,6 +9,7 @@ CopyLeft April, 2012 Prasanna Venkadesh
 """
 from Tkinter import *
 import feedparser
+import pynotify
 
 def parsing():
 	T.delete(1.0,END)
@@ -19,6 +20,10 @@ def parsing():
 	    for entry in data.entries:
 		file.write(entry.title + "\n\n")
 	file.close()
+	
+	pynotify.init("Gilly Cricket")
+	notification = pynotify.Notification ("Success!", "Score fetched.", "dialog-information")
+	notification.show()
 
 	file_read = open("feeds","r+")
 	content = file_read.read()
