@@ -17,8 +17,11 @@ sudo sh ubuntu_install.sh
 * When everything went fine you will get a windows with empty white spaces and Update button. Click on it. To refresh scores, press Update button when required.
 
 * This also supports live updating of the score with notifications. You can set interval time in minutes. Run this in your terminal
+
 	
 	python Gillilive.py (interval time in minutes)
+	
+	
 
 How to use it in Windows (Windows 7 - 64bit)
 ===========================================
