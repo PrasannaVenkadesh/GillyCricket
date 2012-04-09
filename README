@@ -4,10 +4,11 @@ This is the basic version and so this will not have any other features.
 Download the Zip or tar.gz file from Download section of this page.
 Extract the files.
 
-How to use it in Linux (Fedora 16 - Tested)
-==========================================
-1. Run the fedora_install.sh file from terminal like this
+How to use it in Linux (Fedora 16, Ubuntu - Tested)
+==================================================
+1. Run the fedora_install.sh / ubuntu_install.sh file with respect to your operating system from terminal like this
 sudo sh fedora_install.sh
+sudo sh ubuntu_install.sh
 
 Enter password when it prompts
 
