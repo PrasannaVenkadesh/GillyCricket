@@ -10,6 +10,7 @@ CopyLeft April, 2012 Prasanna Venkadesh
 from Tkinter import *
 import feedparser
 import pynotify
+import os
 
 def parsing():
 	T.delete(1.0,END)
@@ -29,6 +30,7 @@ def parsing():
 	content = file_read.read()
 	T.insert(INSERT, content)
 	file_read.close()
+	os.remove("feeds")
 
 
 root = Tk()
