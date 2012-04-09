@@ -19,7 +19,7 @@ sudo sh ubuntu_install.sh
 * This also supports live updating of the score with notifications. You can set interval time in minutes. Run this in your terminal
 
 	
-	python Gillilive.py (interval time in minutes)
+		python Gillilive.py (interval time in minutes)
 	
 	
 
