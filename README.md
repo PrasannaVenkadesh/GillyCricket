@@ -6,15 +6,22 @@ Extract the files.
 
 How to use it in Linux (Fedora 16, Ubuntu - Tested)
 ==================================================
-1. Run the fedora_install.sh / ubuntu_install.sh file with respect to your operating system from terminal like this
+* Run the fedora_install.sh / ubuntu_install.sh file with respect to your operating system from terminal like this
 sudo sh fedora_install.sh
 sudo sh ubuntu_install.sh
 
-Enter password when it prompts
+* Enter password when it prompts
 
-2. After the installation is completed, make sure your system is connected to internet and double click the "Gilly.py" file, Press the Run button on the pop-up windows that appears
+* After the installation is completed, make sure your system is connected to internet and double click the "Gilly.py" file, Press the Run button on the pop-up windows that appears
 
-3. When everything went fine you will get a windows with empty white spaces and Update button. Click on it. To refresh scores, press Update button when required.
+* When everything went fine you will get a windows with empty white spaces and Update button. Click on it. To refresh scores, press Update button when required.
+
+* This also supports live updating of the score with notifications. You can set interval time in minutes. Run this in your terminal
+
+	
+		python Gillilive.py (interval time in minutes)
+	
+	
 
 How to use it in Windows (Windows 7 - 64bit)
 ===========================================
@@ -26,4 +33,5 @@ How to use it in Windows (Windows 7 - 64bit)
 This Software is released under GNU GPL V3.0.
 To know more about the License and Copyleft check COPYING file.
 
---Regards S. Prasanna Venkadesh (prasmailme@gmail.com)
+--Regards S. Prasanna Venkadesh (prasmailme@gmail.com),
+          Ganesh Katrapati  <neshmailsu at gmail dot com>
