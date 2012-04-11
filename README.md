@@ -4,6 +4,8 @@ This is the basic version and so this will not have any other features.
 Download the Zip or tar.gz file from Download section of this page.
 Extract the files.
 
+Developed for python version 2.7, but will not work for Python 3.0 or later, because of modifications in the Tkinter package of Python3.0.
+
 How to use it in Linux (Fedora 16, Ubuntu - Tested)
 ==================================================
 * Run the fedora_install.sh / ubuntu_install.sh file with respect to your operating system from terminal like this
