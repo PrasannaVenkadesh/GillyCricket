@@ -8,7 +8,6 @@ License:- GNU GPL V3.0
 CopyLeft April, 2012 Prasanna Venkadesh
 
 """
-from Tkinter import *
 import feedparser
 import pynotify
 import threading 
