@@ -1,10 +1,10 @@
 Gilly is a Free Software which fetches basic score of cricket matches that are being played right now.
 This is the basic version and so this will not have any other features.
 
+GNU/Linux Users: Make sure you have Python 2.6 or 2.7 for this app to work properly. Developed for Python 2.7 and does not works on Python 3.0 or later.
+
 Download the Zip or tar.gz file from Download section of this page.
 Extract the files.
-
-Developed for python version 2.7, but will not work for Python 3.0 or later, because of modifications in the Tkinter package of Python3.0.
 
 How to use it in Linux (Fedora 16, Ubuntu - Tested)
 ==================================================
