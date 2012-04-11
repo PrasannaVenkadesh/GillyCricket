@@ -1,3 +1,3 @@
 #! /bin/bash
-apt-get install python-feedparser python-tkinter
+apt-get install python-feedparser
 chmod +x Gilly.py
