@@ -42,6 +42,15 @@ How to use it in Windows (Windows 7 - 64bit)
 2. A window should appear with empty white spaces and update button. Click on it. To refresh Scores, press the Update button whenever required.
 
 
+To Uninstall in GNU/Linux
+=========================
+Open up your terminal and type the below command
+
+		sudo removeGilly
+
+
+
+
 This Software is released under GNU GPL V3.0.
 To know more about the License and Copyleft check COPYING file.
 
