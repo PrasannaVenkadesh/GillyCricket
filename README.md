@@ -9,19 +9,27 @@ Extract the files.
 How to use it in Linux (Fedora 16, Ubuntu - Tested)
 ==================================================
 * Run the fedora_install.sh / ubuntu_install.sh file with respect to your operating system from terminal like this
+
 sudo sh fedora_install.sh
 sudo sh ubuntu_install.sh
 
 * Enter password when it prompts
 
-* After the installation is completed, make sure your system is connected to internet and double click the "Gilly.py" file, Press the Run button on the pop-up windows that appears
+* After the installation is completed, make sure your system is connected to internet and double click the "Gilly" file, Press the Run button on the pop-up windows that appears
+
+* You can also now delete this downloaded, extracted folders if you don't need to be in your system or if you don't need the code yourself and just to use the application. After deleting you can run from terminal in very simple mannner:
+
+```
+Gilly &
+Gillylive 2
+```
 
 * When everything went fine you will get a windows with empty white spaces and Update button. Click on it. To refresh scores, press Update button when required.
 
 * This also supports live updating of the score with notifications. You can set interval time in minutes. Run this in your terminal
 
 	
-		python Gillilive.py (interval time in minutes)
+		Gillilive (interval time in minutes)
 	
 	
 
