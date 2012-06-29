@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GillyCricket</class>
+ <widget class="QMainWindow" name="GillyCricket">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gilly Cricket</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="GillyText">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGilly_Cricket">
+    <property name="title">
+     <string>Gilly Cricket</string>
+    </property>
+    <addaction name="actionRefresh"/>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuGilly_Cricket"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRefresh"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="gilly.qrc">
+     <normaloff>:/newPrefix/img/exit.png</normaloff>:/newPrefix/img/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset resource="gilly.qrc">
+     <normaloff>:/newPrefix/img/refresh.png</normaloff>:/newPrefix/img/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fetch Latest</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="gilly.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>img/exit.png</file>
+    <file>img/refresh.png</file>
+  </qresource>
+</RCC>
