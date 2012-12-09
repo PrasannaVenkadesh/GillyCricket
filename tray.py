@@ -1,6 +1,16 @@
 #!/usr/bin/python
 
+"""
+Application Name:- Gilly
+Version:- 1.0
+Author:- Prasanna Venkadesh (http://prasopensource.wordpress.com)
+License:- GNU GPL V3.0
+CopyLeft April, 2012 Prasanna Venkadesh
+
+"""
+
 import appindicator, gtk, gobject, Gilly, time
+from threading import Timer
 
 class Example:
 	def __init__(self):
@@ -15,42 +25,64 @@ class Example:
 
 		self.menu = gtk.Menu()
 
+		listMenu = gtk.Menu()
+
+		listItems = gtk.MenuItem("Country")
+		listItems.set_submenu(listMenu)
+
+		self.menu.append(listItems)
+
 		radio = gtk.RadioMenuItem(None,"India")
-		radio.connect("toggled",self.callback,"India")
+		radio.connect("toggled",self.callback,"india")
 		radio.show()
-		self.menu.append(radio)
+		listMenu.append(radio)
 
 		radio = gtk.RadioMenuItem(radio,"Australia")
-		radio.connect("toggled",self.callback,"Aus")
+		radio.connect("toggled",self.callback,"aus|perth")
 		radio.show()
-		self.menu.append(radio)
+		listMenu.append(radio)
 
 		radio = gtk.RadioMenuItem(radio,"West-Indies")
-		radio.connect("toggled",self.callback,"West Indies")
+		radio.connect("toggled",self.callback,"west indies")
 		radio.show()
-		self.menu.append(radio)
+		listMenu.append(radio)
 
-		item = gtk.MenuItem("Refresh")
-		item.show()
-		self.menu.append(item)
+		radio = gtk.RadioMenuItem(radio,"England")
+		radio.connect("toggled",self.callback,"england")
+		radio.show()
+		listMenu.append(radio)
 
-		check = gtk.CheckMenuItem("Auto-Refresh")
-		check.show()
-		self.menu.append(check)
+		radio = gtk.RadioMenuItem(radio,"Sri-Lanka")
+		radio.connect("toggled",self.callback,"sri lanka")
+		radio.show()
+		listMenu.append(radio)
+
+		radio = gtk.RadioMenuItem(radio,"Bangladesh")
+		radio.connect("toggled",self.callback,"bangladesh|bangla")
+		radio.show()
+		listMenu.append(radio)
+
+		radio = gtk.RadioMenuItem(radio,"NewZealand")
+		radio.connect("toggled",self.callback,"nz|new-zealand")
+		radio.show()
+		listMenu.append(radio)
+
 
 		image = gtk.ImageMenuItem(gtk.STOCK_QUIT)
 		image.connect("activate", self.quit)
 		image.show()
 		self.menu.append(image)
 
+		listMenu.show()
+		listItems.show()
 		self.menu.show()
 		self.ind.set_menu(self.menu)
+		
 
 	def callback(self, widget, data=None):
 		if widget.get_active():
 			self.data = data
 			if self.gilly.internet_on():
-				self.gilly.parsing()
 				self.gilly.country(self.data)
 			else:
 				message = gtk.MessageDialog(type=gtk.MESSAGE_ERROR, buttons=gtk.BUTTONS_NONE)

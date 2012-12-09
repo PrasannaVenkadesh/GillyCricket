@@ -8,41 +8,29 @@ CopyLeft April, 2012 Prasanna Venkadesh
 
 """
 
-import feedparser, re
-import pynotify, os, urllib2
+import pynotify, os, urllib2, re
 
 class GillyClass:
 	def __init__(self):
-		self.flag = True
-	
-	def parsing(self):
-		source=['http://static.cricinfo.com/rss/livescores.xml']
-		file = open("feeds", "w+")
-		for url in source:
-			data = feedparser.parse(url)
-	    	for entry in data.entries:
-			file.write(entry.title + "\n\n")
-		file.close()
-	
 		pynotify.init("Gilly Cricket")
-		
-
 
 	def country(self,name):
+		self.flag = True
 		read_again = open("feeds","r+")
 		lines = read_again.readlines()
 		for i in lines:
 			if re.search(name,i):
 				#print i
-				notification = pynotify.Notification (i, "Current Score", "crickfinal")
+				notification = pynotify.Notification (i.title(), "Latest Update", "stumps")
 				notification.show()
 				self.flag = False
 		if self.flag:
-			notification = pynotify.Notification("No Current Match", "Check later", "sad")
+			print "no match"
+			notification = pynotify.Notification("No Current Match", "Check later", "cry")
 			notification.show()
+			self.flag = False
 		#print line[0]
 		read_again.close()
-		os.remove("feeds")
 
 	def internet_on(self):
 		try:
