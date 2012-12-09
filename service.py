@@ -11,13 +11,13 @@ CopyLeft April, 2012 Prasanna Venkadesh
 import time, feedparser
 
 
-def parsing(self):
+def parsing():
 	source=['http://static.cricinfo.com/rss/livescores.xml']
 	file = open("feeds", "w+")
 	for url in source:
 		data = feedparser.parse(url)
-	    for entry in data.entries:
-		file.write(entry.title.lower() + "\n\n")
+	   	for entry in data.entries:
+			file.write(entry.title.lower() + "\n\n")
 	file.close()
 
 	

@@ -1,0 +1,14 @@
+1. Download all the files and folders
+2. Copy all the 3 icons from Icons folder into /usr/share/icons/ of your system
+3. Run service.py first and open a new tab then run tray.py.
+
+This is for testing purpose only
+
+1. Copy service.py, tray.py and Gilly.py into /usr/bin
+2. Now add service.py and tray.py to list of system-startup applications in ubuntu, so it will start whenever you start your system
+
+Note:- Planning to create a deb package, and to bring this into Ubuntu software center, so that it would available to all Ubuntu users and to make installation with one click :)
+
+service.py will fetch 2 to 4 kb data from Internet every 60 seconds, I hope that wouldn't cost you much.
+On further updates to the app, users can able to set time for auto-refresh from 60 seconds to whatever time you wish.
+
