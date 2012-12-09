@@ -1,0 +1,3 @@
+1. Add Proxy support
+2. Get input from User via GTK UI for setting time to refresh automatically
+3. Compare previous score with new score and Notify if there is a Wicket

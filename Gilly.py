@@ -1,6 +1,6 @@
 #!/usr/bin/env python 
 """
-Application Name:- Gilly
+Application Name:- Gilly Cricket
 Version:- 1.0
 Author:- Prasanna Venkadesh (http://prasopensource.wordpress.com)
 License:- GNU GPL V3.0
